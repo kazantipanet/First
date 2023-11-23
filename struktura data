@@ -1,0 +1,42 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "Схема файлів набору  даних  'Інформація про викрадені, втрачені мобільні телефони' 5c6c156f-21ee-42cd-8da3-dcde6828be97",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "Схема запису даних",
+    "required": [
+      "ID",
+      "OVD",
+      "INSERT_DATE",
+      "NZ",
+      "IMEI",
+      "NK",
+      "DK",
+      "DTL"
+    ],
+    "properties": {
+      "ID": {
+        "$id": "#/items/properties/ID",
+        "type": "string",
+        "title": "Унікальний ідентифікатор запису",
+        "pattern": "^(.*)$"
+      },
+      "OVD": {
+        "$id": "#/items/properties/OVD",
+        "type": "string",
+        "title": "Назва підрозділу, що зареєстрував інформацію",
+        "pattern": "^(.*)$"
+      },
+      "INSERT_DATE": {
+        "$id": "#/items/properties/INSERT_DATE",
+        "type": "string",
+        "title": "Дата внесення інформації",
+        "examples": [
+          "2004-03-29T00:00:00"
+        ],
+        "pattern": "^(.*)$"
+      },
